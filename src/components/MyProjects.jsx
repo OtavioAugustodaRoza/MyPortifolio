@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { motion } from 'framer-motion'
 
 function MyProjects() {
   const [filtro, setFiltro] = useState('Todos')
@@ -66,19 +65,8 @@ function MyProjects() {
   })
 
   return (
-    <motion.section
-      className="min-h-screen w-full flex flex-col gap-11 items-center mt-7 bg-gradient-to-r from-[#FDFBFB] to-[#EBEDEE]"
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.5 }}
-      transition={{ duration: 1 }}
-    >
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.5 }}
-        transition={{ duration: 1 }}
-      >
+    <section className="min-h-screen w-full flex flex-col gap-11 items-center mt-7 bg-gradient-to-r from-[#FDFBFB] to-[#EBEDEE]">
+      <div>
         <h1 className="text-4xl font-medium" id="projects">
           Meus{' '}
           <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent font-semibold">
@@ -88,15 +76,9 @@ function MyProjects() {
         <h2 className="text-gray-600 text-2xl mt-2">
           Confira meus projetos mais recentes
         </h2>
-      </motion.div>
+      </div>
 
-      <motion.div
-        className="flex gap-4 rounded-2xl border-2 border-purple-600 p-1 text-purple-600"
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.5 }}
-        transition={{ duration: 1, delay: 0.2 }}
-      >
+      <div className="flex gap-4 rounded-2xl border-2 border-purple-600 p-1 text-purple-600">
         {['Todos', 'React', 'Html+Css+Js'].map((item) => (
           <button
             key={item}
@@ -110,23 +92,13 @@ function MyProjects() {
             {item}
           </button>
         ))}
-      </motion.div>
+      </div>
 
-      <motion.div
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 w-full px-4"
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.5 }}
-        transition={{ duration: 1, delay: 0.4 }}
-      >
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 w-full px-4">
         {projetosFiltrados.map((pro) => (
-          <motion.div
+          <div
             key={pro.id}
             className="bg-white rounded-xl shadow-md p-6 flex flex-col justify-center items-center transition-transform duration-500 hover:scale-110"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
           >
             <div className="flex flex-col gap-4 justify-center items-center">
               <div className="flex flex-col gap-2 justify-center items-center">
@@ -142,10 +114,10 @@ function MyProjects() {
                 Saiba mais
               </a>
             </div>
-          </motion.div>
+          </div>
         ))}
-      </motion.div>
-    </motion.section>
+      </div>
+    </section>
   )
 }
 
