@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { motion } from 'framer-motion'
 
 function MyProjects() {
   const [filtro, setFiltro] = useState('Todos')
@@ -8,7 +9,7 @@ function MyProjects() {
       nome: 'Gerenciador de tarefas',
       tipo: 'React',
       descricao:
-        'Projeto de rede social inclusiva voltada para pessoas neurodivergentes, oferecendo um espaço seguro e acolhedor para interação. ',
+        'Website para organizar tarefas diárias, controlar prazos e aumentar a produtividade pessoal e profissional. ',
       link: 'curso-react-ashy-xi.vercel.app',
     },
     {
@@ -16,7 +17,7 @@ function MyProjects() {
       nome: 'NutriVitta',
       tipo: 'Html+Css+Js',
       descricao:
-        'Projeto de rede social inclusiva voltada para pessoas neurodivergentes, oferecendo um espaço seguro e acolhedor para interação. ',
+        'Site educativo sobre alimentação equilibrada, com dicas, calculadora de IMC, quizzes e cardápios personalizados. ',
       link: 'new-pi-2k25.vercel.app',
     },
     {
@@ -24,7 +25,7 @@ function MyProjects() {
       nome: 'Calculadora',
       tipo: 'Html+Css+Js',
       descricao:
-        'Projeto de rede social inclusiva voltada para pessoas neurodivergentes, oferecendo um espaço seguro e acolhedor para interação. ',
+        'Ferramenta prática para realizar cálculos matemáticos básicos de forma rápida e intuitiva. ',
       link: 'otavioaugustodaroza.github.io/calculadora/',
     },
     {
@@ -37,7 +38,7 @@ function MyProjects() {
         </>
       ),
       descricao:
-        'Projeto de rede social inclusiva voltada para pessoas neurodivergentes, oferecendo um espaço seguro e acolhedor para interação. ',
+        'Projeto de rede social inclusiva para pessoas neurodivergentes, oferecendo um ambiente seguro. ',
       link: 'ainda não temos',
       tipo: 'React',
     },
@@ -46,15 +47,15 @@ function MyProjects() {
       nome: 'Este Site',
       tipo: 'React',
       descricao:
-        'Projeto de rede social inclusiva voltada para pessoas neurodivergentes, oferecendo um espaço seguro e acolhedor para interação. ',
-      link: 'my-portifolio-iota-inky.vercel.app/',
+        'Website pessoal para exibir projetos, experiências e portfólio de forma organizada e atrativa para todos. ',
+      link: 'https://my-portifolio-iota-inky.vercel.app/',
     },
     {
       id: 5,
       nome: 'Detox digital',
       tipo: 'Html+Css+Js',
       descricao:
-        'Projeto de rede social inclusiva voltada para pessoas neurodivergentes, oferecendo um espaço seguro e acolhedor para interação. ',
+        'Website voltado para ajudar a reduzir o tempo de tela e incentivar hábitos digitais mais saudáveis. ',
       link: 'rafagameplays.github.io/site-de-telas-finalizado/questionario.html',
     },
   ]
@@ -65,8 +66,19 @@ function MyProjects() {
   })
 
   return (
-    <section className="min-h-screen w-full flex flex-col gap-11 items-center mt-7 bg-gradient-to-r from-[#FDFBFB] to-[#EBEDEE]">
-      <div>
+    <motion.section
+      className="min-h-screen w-full flex flex-col gap-11 items-center mt-7 bg-gradient-to-r from-[#FDFBFB] to-[#EBEDEE]"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.5 }}
+      transition={{ duration: 1 }}
+    >
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 1 }}
+      >
         <h1 className="text-4xl font-medium" id="projects">
           Meus{' '}
           <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent font-semibold">
@@ -76,9 +88,15 @@ function MyProjects() {
         <h2 className="text-gray-600 text-2xl mt-2">
           Confira meus projetos mais recentes
         </h2>
-      </div>
+      </motion.div>
 
-      <div className="flex gap-4 rounded-2xl border-2 border-purple-600 p-1 text-purple-600">
+      <motion.div
+        className="flex gap-4 rounded-2xl border-2 border-purple-600 p-1 text-purple-600"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 1, delay: 0.2 }}
+      >
         {['Todos', 'React', 'Html+Css+Js'].map((item) => (
           <button
             key={item}
@@ -92,13 +110,23 @@ function MyProjects() {
             {item}
           </button>
         ))}
-      </div>
+      </motion.div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 w-full px-4">
+      <motion.div
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 w-full px-4"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 1, delay: 0.4 }}
+      >
         {projetosFiltrados.map((pro) => (
-          <div
+          <motion.div
             key={pro.id}
             className="bg-white rounded-xl shadow-md p-6 flex flex-col justify-center items-center transition-transform duration-500 hover:scale-110"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
           >
             <div className="flex flex-col gap-4 justify-center items-center">
               <div className="flex flex-col gap-2 justify-center items-center">
@@ -114,10 +142,10 @@ function MyProjects() {
                 Saiba mais
               </a>
             </div>
-          </div>
+          </motion.div>
         ))}
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   )
 }
 
