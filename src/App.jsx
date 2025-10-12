@@ -1,6 +1,6 @@
 import './App.css'
 import Whoisme from './components/Whoisme'
-import MyProjects from './components/myprojects'
+import MyProjects from './components/MyProjects'
 function App() {
   return (
 
