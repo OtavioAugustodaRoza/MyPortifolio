@@ -8,9 +8,10 @@ function TalkWithUs() {
   });
 
   const handleChange = (e) => {
+    const { name, value } = e.target;
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [name]: value
     });
   };
 
@@ -24,7 +25,7 @@ function TalkWithUs() {
       
       <div id="contato" className="flex flex-col gap-3 justify-center items-center text-center">
         <h1 className="text-4xl font-semibold  bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-transparent bg-clip-text">Entre em Contato</h1>
-        <h2 className="text-gray-600 text-lg max-w-xl">
+        <h2 className="text-gray-600 text-[20px]  max-w-xl">
           Estou sempre aberto a novos projetos e oportunidades. Entre em contato!
         </h2>
       </div>
