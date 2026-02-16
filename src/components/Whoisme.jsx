@@ -41,7 +41,7 @@ function Whoisme() {
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 1, delay: 0.4 }}
         >
-          <h1 className="text-4xl font-bold transition-all duration-1000 hover:bg-gradient-to-r hover:from-blue-600 hover:via-purple-600 hover:to-pink-600 hover:text-transparent hover:bg-clip-text">
+          <h1 className="text-4xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-transparent bg-clip-text">
             Desenvolvedor Front-End
           </h1>
           <p className="text-2xl mt-2 text-gray-500">
@@ -77,7 +77,7 @@ function Whoisme() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 1, delay: 0.8 }}
+          transition={{ duration: 1}}
         >
           <Link
             to="projects"
@@ -91,7 +91,7 @@ function Whoisme() {
             to="contato"
             smooth={true}
             duration={800}
-            className="px-6 py-2 border-2 border-purple-600 text-purple-600 rounded-xl hover:bg-purple-600 hover:text-white transition-all">
+            className="px-6 py-2 border-2 border-purple-600 text-purple-600 rounded-xl hover:bg-purple-600 hover:text-white transition-all cursor-pointer">
             contato
           </Link>
         </motion.div>
@@ -101,7 +101,7 @@ function Whoisme() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 1, delay: 1 }}
+          transition={{ duration: 1}}
         >
           <a
             href="https://github.com/OtavioAugustodaRoza"
