@@ -21,16 +21,21 @@ function TalkWithUs() {
   };
 
   return (
-    <section className="min-h-screen w-full flex flex-col items-center mt-20 mb-20 bg-gradient-to-r from-[#FDFBFB] to-[#EBEDEE] px-4">
+    <section className="min-h-screen w-full flex flex-col items-center    bg-gradient-to-r from-[#FDFBFB] to-[#EBEDEE]   px-4 py-6">
       
-      <div id="contato" className="flex flex-col gap-3 justify-center items-center text-center">
+      <div id="contato" className="flex flex-col gap-3 justify-center items-center text-center z-10">
+        
         <h1 className="text-4xl font-semibold  bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-transparent bg-clip-text">Entre em Contato</h1>
         <h2 className="text-gray-600 text-[20px]  max-w-xl">
           Estou sempre aberto a novos projetos e oportunidades. Entre em contato!
         </h2>
       </div>
 
-      <div className="mt-10 w-full max-w-lg bg-white p-8 rounded-2xl shadow-xl">
+      <div className="mt-2 w-full max-w-lg bg-white p-8 rounded-2xl shadow-xl ">
+        <div>
+          
+        </div>
+
         <form onSubmit={handleSubmit} className="flex flex-col gap-5">
 
       

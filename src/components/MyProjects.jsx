@@ -65,7 +65,7 @@ function MyProjects() {
   })
 
   return (
-    <section className="min-h-screen w-full flex flex-col gap-11 items-center mt-7 bg-gradient-to-r from-[#FDFBFB] to-[#EBEDEE]">
+    <section className="min-h-screen w-full flex flex-col gap-11 items-center mt-7 bg-gradient-to-r from-[#FDFBFB] to-[#EBEDEE] mb-20">
       <div>
         <h1 className="text-4xl font-medium text-center" id="projects">
           Meus{' '}

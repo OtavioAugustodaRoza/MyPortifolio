@@ -104,12 +104,14 @@ function Whoisme() {
           transition={{ duration: 1}}
         >
           <a
+          target='blank'
             href="https://github.com/OtavioAugustodaRoza"
             className="text-xl text-gray-700 hover:text-blue-600 transition-colors"
           >
             GitHub
           </a>
           <a
+          target='blank'
             href="https://www.linkedin.com/in/otavio-augusto-da-roza-1ab85a362/"
             className="text-xl text-gray-700 hover:text-blue-600 transition-colors"
           >

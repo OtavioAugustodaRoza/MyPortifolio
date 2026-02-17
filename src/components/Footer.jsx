@@ -1,4 +1,6 @@
 import { Link } from 'react-scroll'
+import { DiGithubBadge } from "react-icons/di";
+import { CiLinkedin } from "react-icons/ci";
 function Footer() {
     return (
       <footer className="w-full bg-zinc-900 text-white py-12">
@@ -56,16 +58,19 @@ function Footer() {
               <h3 className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent font-semibold text-lg">Redes</h3>
               <div className="flex gap-4">
                 <a
-                  href="#"
-                  className="text-zinc-400 hover:text-purple-400 duration-300 hover:-translate-y-1 inline-block"
+                  href="https://github.com/OtavioAugustodaRoza"
+                   target='blank'
+                  className="text-4xl text-zinc-400 hover:text-purple-400 duration-300 hover:-translate-y-1 inline-block"
                 >
-                  GitHub
+                 < DiGithubBadge/>
+        
                 </a>
                 <a
-                  href="#"
-                  className="text-zinc-400 hover:text-purple-400 duration-300 hover:-translate-y-1 inline-block"
+                  href="https://www.linkedin.com/in/otavio-augusto-da-roza-1ab85a362/"
+                  target='blank'
+                  className="text-4xl text-zinc-400 hover:text-purple-400 duration-300 hover:-translate-y-1 inline-block"
                 >
-                  LinkedIn
+                  <CiLinkedin/>
                 </a>
               </div>
             </div>
