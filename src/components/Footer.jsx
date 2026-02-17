@@ -56,11 +56,11 @@ function Footer() {
   
             <div className="space-y-3">
               <h3 className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent font-semibold text-lg">Redes</h3>
-              <div className="flex gap-4">
+              <div className="flex gap-4 items-center justify-center ">
                 <a
                   href="https://github.com/OtavioAugustodaRoza"
                    target='blank'
-                  className="text-4xl text-zinc-400 hover:text-purple-400 duration-300 hover:-translate-y-1 inline-block"
+                  className="text-4xl text-zinc-400 hover:text-purple-400 duration-300 hover:-translate-y-1 inline-block "
                 >
                  < DiGithubBadge/>
         
