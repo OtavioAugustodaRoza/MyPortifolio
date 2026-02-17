@@ -57,13 +57,13 @@ function Footer() {
               <div className="flex gap-4">
                 <a
                   href="#"
-                  className="text-zinc-400 hover:text-purple-400 transition-colors duration-300 hover:-translate-y-1 inline-block"
+                  className="text-zinc-400 hover:text-purple-400 duration-300 hover:-translate-y-1 inline-block"
                 >
                   GitHub
                 </a>
                 <a
                   href="#"
-                  className="text-zinc-400 hover:text-purple-400 transition-colors duration-300 hover:-translate-y-1 inline-block"
+                  className="text-zinc-400 hover:text-purple-400 duration-300 hover:-translate-y-1 inline-block"
                 >
                   LinkedIn
                 </a>
