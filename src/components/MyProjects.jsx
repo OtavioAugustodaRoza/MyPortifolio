@@ -51,7 +51,7 @@ function MyProjects() {
       tecs: <>{Django}</>,
       descricao:
         'Sistema de gestão clínica SIMPLES do qual tem foco em aprendizagem de tecnologias backend',
-      link: 'https://github.com/OtavioAugustodaRoza/sistema_gestao_clinica.git',
+      link: 'https://github.com/OtavioAugustodaRoza/sistema_gestao_clinica',
     },
     {
       id: 3,
@@ -102,7 +102,7 @@ function MyProjects() {
       ),
       descricao:
         'AudioBook completo com opção de postagem de músicas e criação de playlists com intuito em desenvolver uma comunidade . ',
-      link: 'rafagameplays.github.io/site-de-telas-finalizado/questionario.html',
+      link: 'https://audio-book-xi.vercel.app/',
     },
   ]
 
