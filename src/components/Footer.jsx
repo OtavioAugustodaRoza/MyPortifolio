@@ -24,7 +24,7 @@ function Footer() {
                         smooth={true}
                         duration={800}
                     
-                    className="text-zinc-400 hover:text-purple-400 transition-colors duration-300 hover:-translate-y-1 inline-block cursor-pointer"
+                    className="text-zinc-400 hover:text-purple-400  duration-300 hover:-translate-y-1 inline-block cursor-pointer"
                   >
                     Sobre
                   </Link>
@@ -34,7 +34,7 @@ function Footer() {
                     to="projects"
                     smooth={true}
                     duration={800}
-                    className="text-zinc-400 hover:text-purple-400 transition-colors duration-300 cursor-pointer hover:-translate-y-1 inline-block"
+                    className="text-zinc-400 hover:text-purple-400  duration-300 cursor-pointer hover:-translate-y-1 inline-block"
                   >
                     Projetos
                   </Link>
@@ -44,7 +44,7 @@ function Footer() {
                       to="contato"
                       smooth={true}
                       duration={800}
-                    className="text-zinc-400 hover:text-purple-400 transition-color cursor-pointer duration-300 hover:-translate-y-1 inline-block"
+                    className="text-zinc-400 hover:text-purple-400  cursor-pointer duration-300 hover:-translate-y-1 inline-block"
                   >
                     Contato
                   </Link>
