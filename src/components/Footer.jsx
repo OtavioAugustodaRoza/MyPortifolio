@@ -44,7 +44,7 @@ function Footer() {
                       to="contato"
                       smooth={true}
                       duration={800}
-                    className="text-zinc-400 hover:text-purple-400 transition-colors duration-300 hover:-translate-y-1 inline-block"
+                    className="text-zinc-400 hover:text-purple-400 transition-color cursor-pointer duration-300 hover:-translate-y-1 inline-block"
                   >
                     Contato
                   </Link>
