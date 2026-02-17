@@ -1,23 +1,31 @@
 import { useState } from 'react'
-import { TbBrandDjango,TbBrandJavascript,TbBrandHtml5,TbBrandCss3,TbBrandTailwind,TbBrandReact } from "react-icons/tb";
-
-
-
+import {
+  TbBrandDjango,
+  TbBrandJavascript,
+  TbBrandHtml5,
+  TbBrandCss3,
+  TbBrandTailwind,
+  TbBrandReact,
+} from 'react-icons/tb'
 
 function MyProjects() {
   const [filtro, setFiltro] = useState('Todos')
-  const Django = <TbBrandDjango className='text-[#092E20]'/>;
-  const Javascript = <TbBrandJavascript className='text-yellow-400'/>
-  const Html = <TbBrandHtml5  className ='text-orange-400'/>
-  const Css = <TbBrandCss3 className='text-blue-400'/>
-  const Tailwind = <TbBrandTailwind  className='text-blue-400'/>
-  const React = <TbBrandReact  className='text-purple-600'/>
+  const Django = <TbBrandDjango className="text-[#092E20]" />
+  const Javascript = <TbBrandJavascript className="text-yellow-400" />
+  const Html = <TbBrandHtml5 className="text-orange-400" />
+  const Css = <TbBrandCss3 className="text-blue-400" />
+  const Tailwind = <TbBrandTailwind className="text-blue-400" />
+  const React = <TbBrandReact className="text-purple-600" />
   const projetos = [
     {
       id: 1,
       nome: 'Gerenciador de tarefas',
       tipo: 'React',
-      tecs: <>{React} {Tailwind} </>  ,
+      tecs: (
+        <>
+          {React} {Tailwind}{' '}
+        </>
+      ),
       descricao:
         'Website para organizar tarefas diárias, controlar prazos e aumentar a produtividade pessoal e profissional. ',
       link: 'curso-react-ashy-xi.vercel.app',
@@ -26,7 +34,12 @@ function MyProjects() {
       id: 2,
       nome: 'NutriVitta',
       tipo: 'Html+Css+Js',
-      tecs: <> {Javascript} {Html} {Css} </>  ,
+      tecs: (
+        <>
+          {' '}
+          {Javascript} {Html} {Css}{' '}
+        </>
+      ),
       descricao:
         'Site educativo sobre alimentação equilibrada, com dicas, calculadora de IMC, quizzes e cardápios personalizados. ',
       link: 'new-pi-2k25.vercel.app',
@@ -49,7 +62,11 @@ function MyProjects() {
           </span>
         </>
       ),
-       tecs: <>{React} {Tailwind} </> ,
+      tecs: (
+        <>
+          {React} {Tailwind}{' '}
+        </>
+      ),
       descricao:
         'Projeto de rede social inclusiva para pessoas neurodivergentes, oferecendo um ambiente seguro. ',
       link: 'ainda não temos',
@@ -59,20 +76,30 @@ function MyProjects() {
       id: 4,
       nome: 'Este Site',
       tipo: 'React',
-      tecs: <>{React} {Tailwind} </> ,
+      tecs: (
+        <>
+          {React} {Tailwind}{' '}
+        </>
+      ),
       descricao:
         'Website pessoal para exibir projetos, experiências e portfólio de forma organizada e atrativa para todos. ',
       link: 'https://my-portifolio-iota-inky.vercel.app/',
     },
     {
       id: 5,
-      nome:   <>
-      <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent font-bold">
-        (Em desenvolvimento)
-      </span>
-    </>,
+      nome: (
+        <>
+          <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent font-bold">
+            (Em desenvolvimento)
+          </span>
+        </>
+      ),
       tipo: 'React',
-      tecs: <>{React} {Tailwind}</> ,
+      tecs: (
+        <>
+          {React} {Tailwind}
+        </>
+      ),
       descricao:
         'AudioBook completo com opção de postagem de músicas e criação de playlists com intuito em desenvolver uma comunidade . ',
       link: 'rafagameplays.github.io/site-de-telas-finalizado/questionario.html',
@@ -97,14 +124,13 @@ function MyProjects() {
           Confira meus projetos mais recentes
         </h2>
       </div>
-      
 
-      <div className="flex gap-4 rounded-2xl border-2 border-purple-600 p-1 text-purple-600">
+      <div className="flex flex-wrap gap-3 rounded-2xl border-2 border-purple-600 p-2 text-purple-600 justify-center">
         {['Todos', 'React', 'Html+Css+Js', 'Django'].map((item) => (
           <button
             key={item}
             onClick={() => setFiltro(item)}
-            className={`px-6 py-2 rounded-2xl font-medium transition-colors duration-300 ${
+            className={`px-4 sm:px-6 py-2 rounded-2xl text-sm sm:text-base font-medium transition-colors duration-300 ${
               filtro === item
                 ? 'bg-purple-600 text-white'
                 : 'bg-transparent hover:bg-purple-200'
