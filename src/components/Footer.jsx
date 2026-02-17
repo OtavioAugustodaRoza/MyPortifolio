@@ -3,7 +3,7 @@ import { DiGithubBadge } from "react-icons/di";
 import { CiLinkedin } from "react-icons/ci";
 function Footer() {
     return (
-      <footer className="w-full bg-zinc-900 text-white py-12">
+      <footer className="w-full bg-zinc-900 text-white py-12 sm:py-5">
         <div className="max-w-6xl mx-auto px-6">
   
           <div className="flex flex-col md:flex-row justify-between gap-10">
