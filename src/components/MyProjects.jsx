@@ -125,7 +125,8 @@ function MyProjects() {
         </h2>
       </div>
 
-      <div className="flex flex-wrap gap-3 rounded-2xl border-2 border-purple-600 p-2 text-purple-600 justify-center">
+      <div className="grid grid-cols-2 sm:flex gap-3 rounded-2xl border-2 border-purple-600 p-1 text-purple-600">
+
         {['Todos', 'React', 'Html+Css+Js', 'Django'].map((item) => (
           <button
             key={item}
