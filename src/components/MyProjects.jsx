@@ -67,7 +67,7 @@ function MyProjects() {
   return (
     <section className="min-h-screen w-full flex flex-col gap-11 items-center mt-7 bg-gradient-to-r from-[#FDFBFB] to-[#EBEDEE]">
       <div>
-        <h1 className="text-4xl font-medium" id="projects">
+        <h1 className="text-4xl font-medium text-center" id="projects">
           Meus{' '}
           <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent font-semibold">
             Projetos

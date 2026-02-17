@@ -21,7 +21,7 @@ function TalkWithUs() {
   };
 
   return (
-    <section className="min-h-screen w-full flex flex-col items-center mt-20 bg-gradient-to-r from-[#FDFBFB] to-[#EBEDEE] px-4">
+    <section className="min-h-screen w-full flex flex-col items-center mt-20 mb-20 bg-gradient-to-r from-[#FDFBFB] to-[#EBEDEE] px-4">
       
       <div id="contato" className="flex flex-col gap-3 justify-center items-center text-center">
         <h1 className="text-4xl font-semibold  bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-transparent bg-clip-text">Entre em Contato</h1>

@@ -7,7 +7,7 @@ import { Link } from 'react-scroll'
 function Whoisme() {
   return (
     <section className="min-h-screen w-full flex flex-col items-center justify-center px-6 bg-gradient-to-r from-[#FDFBFB] to-[#EBEDEE] text-gray-800">
-      <div className="flex flex-col items-center justify-center gap-8 text-center">
+      <div id='me' className="flex flex-col items-center justify-center gap-6 text-center">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
